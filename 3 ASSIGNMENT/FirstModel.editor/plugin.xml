@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated firstModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="firstModel.presentation.FirstModelModelWizardID"
+            name="%_UI_FirstModelModelWizard_label"
+            class="firstModel.presentation.FirstModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FirstModelModelFile.gif">
+         <description>%_UI_FirstModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated firstModel -->
+      <editor
+            id="firstModel.presentation.FirstModelEditorID"
+            name="%_UI_FirstModelEditor_label"
+            icon="icons/full/obj16/FirstModelModelFile.gif"
+            extensions="firstmodel"
+            class="firstModel.presentation.FirstModelEditor"
+            contributorClass="firstModel.presentation.FirstModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<secondModel:LiveScore xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:secondModel="http://www.example.org/secondModel" salonname="Vasteras">
+  <preferedplayer name="Albi" won="120" playings="12"/>
+  <preferedplayer name="Otehr" won="23" playings="23"/>
+</secondModel:LiveScore>

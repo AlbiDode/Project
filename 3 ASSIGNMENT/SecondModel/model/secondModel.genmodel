@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/SecondModel/src" modelPluginID="SecondModel" modelName="SecondModel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>secondModel.ecore</foreignModel>
+  <genPackages prefix="SecondModel" disposableProviderFactory="true" ecorePackage="secondModel.ecore#/">
+    <genClasses ecoreClass="secondModel.ecore#//LiveScore">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference secondModel.ecore#//LiveScore/preferedplayer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute secondModel.ecore#//LiveScore/salonname"/>
+    </genClasses>
+    <genClasses ecoreClass="secondModel.ecore#//PreferedPlayer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute secondModel.ecore#//PreferedPlayer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute secondModel.ecore#//PreferedPlayer/won"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute secondModel.ecore#//PreferedPlayer/playings"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

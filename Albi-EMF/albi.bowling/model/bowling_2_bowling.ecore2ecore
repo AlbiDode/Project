@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore2ecore:Ecore2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore2ecore="http://www.eclipse.org/emf/2004/Ecore2Ecore" topToBottom="true">
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Player/name"/>
+      <outputs href="bowling.ecore#//Player/name"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Player/dateOfBirth"/>
+      <outputs href="bowling.ecore#//Player/dateOfBirth"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Player/height"/>
+      <outputs href="bowling.ecore#//Player/height"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Player/isProfessional"/>
+      <outputs href="bowling.ecore#//Player/isProfessional"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Player"/>
+    <outputs href="bowling.ecore#//Player"/>
+  </nested>
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//League/name"/>
+      <outputs href="bowling.ecore#//League/name"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//League/players"/>
+      <outputs href="bowling.ecore#//League/players"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//League"/>
+    <outputs href="bowling.ecore#//League"/>
+  </nested>
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Tournament/matchups"/>
+      <outputs href="bowling.ecore#//Tournament/matchups"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Tournament/type"/>
+      <outputs href="bowling.ecore#//Tournament/type"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Tournament"/>
+    <outputs href="bowling.ecore#//Tournament"/>
+  </nested>
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Matchup/games"/>
+      <outputs href="bowling.ecore#//Matchup/games"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Matchup"/>
+    <outputs href="bowling.ecore#//Matchup"/>
+  </nested>
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Game/matchup"/>
+      <outputs href="bowling.ecore#//Game/matchup"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Game/player"/>
+      <outputs href="bowling.ecore#//Game/player"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Game/frames"/>
+      <outputs href="bowling.ecore#//Game/frames"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//Game"/>
+    <outputs href="bowling.ecore#//Game"/>
+  </nested>
+  <nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//TournamentType/Pro"/>
+      <outputs href="bowling.ecore#//TournamentType/Pro"/>
+    </nested>
+    <nested>
+      <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//TournamentType/Amateur"/>
+      <outputs href="bowling.ecore#//TournamentType/Amateur"/>
+    </nested>
+    <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#//TournamentType"/>
+    <outputs href="bowling.ecore#//TournamentType"/>
+  </nested>
+  <inputs href="../../org.eclipse.example.bowlingmodel/model/bowling.ecore#/"/>
+  <outputs href="bowling.ecore#/"/>
+</ecore2ecore:Ecore2EcoreMappingRoot>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<firstModel:BetAndWin xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:firstModel="http://www.example.org/firstModel" matchcategory="Vasteras">
+  <livebet name="Albi" frequencyofplaying="12" moneywon="120"/>
+  <boss name="Otehr" frequencyofplaying="23" moneywon="23"/>
+</firstModel:BetAndWin>

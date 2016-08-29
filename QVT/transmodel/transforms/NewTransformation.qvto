@@ -1,0 +1,43 @@
+modeltype ABC  uses "http://TransitionQVT.ecore";
+modeltype pl uses "http://www.example.org/bowling";
+transformation NewTransformation(in inBowling:pl, out outABC:ABC);
+
+main() {
+ 
+	inBowling.rootObjects()[Player] -> map player2abc();
+	inBowling.rootObjects()[Player] -> map height2abc();
+    inBowling.rootObjects()[Player] -> map final2abc();
+}
+
+mapping pl::Player::player2abc(): ABC::B { 
+	boss := self.name;
+	 }
+
+mapping pl::Player::height2abc(): ABC::A {
+ 
+	height:= self.height; 
+	reduction:=qq(self);
+}
+ 
+mapping pl::Player::final2abc(): ABC::C {
+	c:=fi(self);
+}
+
+query fi(in pf:pl::Player):String {
+	if (pf.name.size()>4) 
+ log ("Size of name is checked");
+	 return pf.name+"ASSIGNMENT DONE !!";
+}
+ 
+query qq(in pass:pl::Player):Integer
+{
+if (pass.inPlayerHasHeight()) 
+		then return(1)
+	endif;
+	return(0); 
+};
+ query pl::Player::inPlayerHasHeight(): Boolean {
+	return(self.height) -> notEmpty();
+}
+
+ 

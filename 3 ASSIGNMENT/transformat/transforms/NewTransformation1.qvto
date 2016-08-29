@@ -1,0 +1,42 @@
+modeltype FirstMM uses "http://www.example.org/firstModel";
+modeltype SecondMM uses "http://www.example.org/secondModel";
+transformation NewTransformation1(in fFirst:FirstMM, out tSecond:SecondMM);
+main() {
+	fFirst.rootObjects()[BetAndWin] -> map bet2live();
+}
+	mapping FirstMM::BetAndWin::bet2live():SecondMM::LiveScore {
+	salonname := self.matchcategory;
+	preferedplayer += self.livebet ->map livebetmapp();
+	preferedplayer += self.boss ->map bossmap();
+	 
+	}
+	
+	mapping LiveBet::livebetmapp() : PreferedPlayer {
+	
+		name := self.name;
+		won := self.calculatewonlivebet(self);
+		playings:=self.frequencyofplaying;
+	}
+	mapping Boss::bossmap() : PreferedPlayer {
+	
+		name := self.name;
+		won := self.calculatewonboss(self);
+		playings:=self.frequencyofplaying;
+	}
+	 
+	query FirstMM::TypeOfPlayers::calculatewonlivebet(in typeof:FirstMM::TypeOfPlayers): Integer {
+	if (self.oclIsKindOf(FirstMM::LiveBet) and self.moneywon>=1) {
+		return self.moneywon;
+	}
+	endif; 
+		return 0;
+	}
+	
+	query FirstMM::TypeOfPlayers::calculatewonboss(in typeof:FirstMM::TypeOfPlayers): Integer {
+	if  (self.oclIsKindOf(FirstMM::Boss) and self.moneywon>=1)
+	{
+		return self.moneywon;
+	}
+	endif; 
+		return 0;
+	}

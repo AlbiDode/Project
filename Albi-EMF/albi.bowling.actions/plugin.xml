@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="albi.bowling.actions.contribution1">
+         <menu
+               label="THE PLUGIN ACTIONS"
+               path="additions"
+               id="albi.bowling.actions.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Tournament View - Add Matchup"
+               class="albi.bowling.actions.popup.actions.OpenTournamentAction"
+               menubarPath="albi.bowling.actions.menu1/group1"
+               enablesFor="1"
+               id="albi.bowling.actions.newAction">
+         </action>
+         <action
+               class="albi.bowling.actions.popup.actions.OpenLeagueAction"
+               enablesFor="1"
+               id="albi.bowling.actions.newAction2"
+               label="League View - Add Player + Special Player"
+               menubarPath="albi.bowling.actions.menu1/group1">
+         </action>
+          <action
+               class="albi.bowling.actions.popup.actions.OpenMatchupAction"
+               enablesFor="1"
+               id="albi.bowling.actions.newAction3"
+               label="Matchup Game View - Add 2 games"
+               menubarPath="albi.bowling.actions.menu1/group1">
+         </action>
+         
+         
+      </objectContribution>
+   </extension>
+
+</plugin>

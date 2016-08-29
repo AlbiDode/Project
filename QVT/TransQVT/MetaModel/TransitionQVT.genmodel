@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TransQVT/src" modelPluginID="TransQVT" redirection=""
+    modelName="TransitionQVT" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>TransitionQVT.ecore</foreignModel>
+  <genPackages prefix="TransitionQVT" disposableProviderFactory="true" ecorePackage="TransitionQVT.ecore#/">
+    <genClasses ecoreClass="TransitionQVT.ecore#//Root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference TransitionQVT.ecore#//Root/element"/>
+    </genClasses>
+    <genClasses ecoreClass="TransitionQVT.ecore#//A">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute TransitionQVT.ecore#//A/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute TransitionQVT.ecore#//A/reduction"/>
+    </genClasses>
+    <genClasses ecoreClass="TransitionQVT.ecore#//B">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute TransitionQVT.ecore#//B/boss"/>
+    </genClasses>
+    <genClasses ecoreClass="TransitionQVT.ecore#//C">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute TransitionQVT.ecore#//C/c"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="TransitionQVT.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute TransitionQVT.ecore#//Element/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference TransitionQVT.ecore#//Element/abc"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

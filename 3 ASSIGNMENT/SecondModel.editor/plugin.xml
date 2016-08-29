@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated secondModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="secondModel.presentation.SecondModelModelWizardID"
+            name="%_UI_SecondModelModelWizard_label"
+            class="secondModel.presentation.SecondModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SecondModelModelFile.gif">
+         <description>%_UI_SecondModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated secondModel -->
+      <editor
+            id="secondModel.presentation.SecondModelEditorID"
+            name="%_UI_SecondModelEditor_label"
+            icon="icons/full/obj16/SecondModelModelFile.gif"
+            extensions="secondmodel"
+            class="secondModel.presentation.SecondModelEditor"
+            contributorClass="secondModel.presentation.SecondModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
